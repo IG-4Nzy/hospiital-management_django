@@ -1,0 +1,55 @@
+{%load static%}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Cancer Department | Hospital Name</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'speciality' %}">Services</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1>Cancer Department</h1>
+    </header>
+    <main>
+        <section>
+            <h2>About the Cancer Department</h2>
+            <p>Our hospital's cancer department is dedicated to providing exceptional care to patients with cancer. Our team of highly trained oncologists, nurses, and technicians are committed to improving the health and well-being of our patients.</p>
+            <p>Our cancer services include:</p>
+            <ul>
+                <li>Chemotherapy</li>
+                <li>Radiation therapy</li>
+                <li>Surgical oncology</li>
+                <li>Immunotherapy</li>
+                <li>Hematology/oncology</li>
+                <li>And more</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Our Cancer Team</h2>
+            <p>Our team of oncologists, nurses, and technicians are dedicated to providing the highest quality care to our cancer patients. Meet our team:</p>
+            <ul>
+                <li>Dr. Sarah Johnson, MD, Oncologist</li>
+                <li>John Smith, RN, BSN, Oncology Nurse</li>
+                <li>Mark Lee, RRT, Registered Radiation Therapist</li>
+                <li>And more</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Make an Appointment</h2>
+            <p>To make an appointment with one of our oncologists or to learn more about our cancer services, please call us at <a href="tel:123-456-7890">123-456-7890</a> or fill out our online contact form</a>.</p>
+        </section>
+        <section>
+            <!-- <button type="button" onclick="window.location.href='application.html'">Apply Now</button> -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 CENTRAL HOSPITAL. All rights reserved.</p>
+    </footer>
+</body>
+</html>

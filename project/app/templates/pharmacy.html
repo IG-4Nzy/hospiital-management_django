@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pharmacies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card {
+      width: 300px;
+      margin: 10px;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+    
+    .card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .card-text {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+    
+    .no-pharmacies {
+      text-align: center;
+      color: #555;
+      margin-top: 20px;
+    }
+    .img{
+      width: 100px;
+      height: 100px;
+    }
+    .btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-within,:active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <h1>Pharmacies</h1>
+  
+  {% if medicines %}
+    <div class="container">
+      {% for medicine in medicines %}
+      <div class="card">
+        <img class="img" src="{{ medicine.image.url }}" alt="Medicine">
+        <h5 class="card-title">{{ medicine.name }}</h5>
+        <p class="card-text">MRP: {{ medicine.rate }}</p>
+        <p class="card-text">Packed Date: {{ medicine.added }}</p>
+        <p class="card-text">Expiry: {{ medicine.expiry }}</p>
+        <p class="card-text">{{ medicine.description }}</p>
+        <a href="{% url 'buy_medicine' medicine.id %}" style="display: inline-block; padding: 12px 24px; font-size: 16px; text-decoration: none; background-color: #007bff; color: #fff; border: none; border-radius: 4px; transition: background-color 0.3s ease-in-out;">
+          Buy
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="no-pharmacies">No pharmacies found.</p>
+  {% endif %}
+  <button onclick="location.href='{% url 'home' %}'" class="btn-donate">
+    Home
+</button>
+  
+</body>
+</html>

@@ -1,0 +1,55 @@
+{%load static%}
+<html>
+<head>
+  <title>Neurology Department | Hospital Name</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'speciality' %}">Services</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+    </ul>
+    </nav>
+    <h1>Neurology Department</h1>
+  </header>
+  <main>
+    <section>
+      <h2>About the Neurology Department</h2>
+      <p>Our hospital's neurology department is dedicated to the diagnosis, treatment, and management of neurological conditions affecting the brain, spinal cord, and nervous system. Our team of experienced neurologists, neurosurgeons, and other healthcare professionals work together to provide comprehensive care for our patients.</p>
+      <p>Our neurology services include:</p>
+      <ul>
+        <li>Neurological consultations and evaluations</li>
+        <li>Diagnostic testing, including electroencephalography (EEG), electromyography (EMG), and nerve conduction studies</li>
+        <li>Treatment of neurological disorders, including epilepsy, stroke, multiple sclerosis, Parkinson's disease, and Alzheimer's disease</li>
+        <li>Neurosurgery, including brain and spinal cord surgery</li>
+        <li>Neurorehabilitation, including physical and occupational therapy</li>
+        <li>And more</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Our Neurology Team</h2>
+      <p>Our team of neurologists, neurosurgeons, and other healthcare professionals are dedicated to providing the highest quality care to our patients. Meet our team:</p>
+      <ul>
+        <li>Dr. John Smith, MD, Neurologist</li>
+        <li>Dr. Sarah Johnson, MD, Neurosurgeon</li>
+        <li>Dr. Michael Lee, MD, Neurologist</li>
+        <li>And more</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Make an Appointment</h2>
+      <p>To make an appointment with one of our neurologists or to learn more about our neurology services, please call us at <a href="tel:123-456-7890">123-456-7890</a> or fill out our online contact form.</p>
+    </section>
+    <section>
+        <button type="button" onclick="window.location.href='application.html'">Apply Now</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 CENTRAL HOSPITAL. All rights reserved.</p>
+  </footer>
+</body>
+</html>

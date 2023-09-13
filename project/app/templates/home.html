@@ -1,0 +1,133 @@
+{%load static%}
+<html>
+<head>
+    <title>Hospital</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+    <style>
+        .mg{
+            opacity:100%;
+            position: relative;
+            left: 910px;
+            width: 40px;
+            height: 40px;
+            bottom: 40px;
+        }
+        .mag{
+            opacity: 100%;
+            width: 60px;
+            height: 35px;
+            border-radius: 5px;
+        }
+        .mag:hover{
+            background-color: rgb(142, 145, 148);
+        }
+    </style>
+</head>
+<body>
+        <div class="top">
+            <ul class="fl">
+                <li class="lis"><a id="lis" href="{% url 'contact' %}" >Contact</a></li>
+                <li class="lis"><a id="lis" href="#">Home Care</a></li>
+                <li class="lis"><a id="lis" href="{% url 'about' %}">About us</a></li>
+                <li class="lis"><a id="lis" href="{% url 'login' %}"> Admin</a></li>
+            </ul>
+        </div>
+        <div>  
+            <img class="logo" src="{%static 'img/logo.png' %}"> 
+            <h1 class="heading"><span id="cn">CENTRAL</span> <span id="hs">HOSPITAL</span></h1>
+            <h4 class="tvm">Thiruvananthapuram,Kerala</h4>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="{%static 'img/hos1.jpg' %}" alt="Image 1" id="imgs">
+            </div>
+            <div class="mySlides">
+                <img src="{%static 'img/hos2.jpeg' %}" alt="Image 2" id="imgs">
+            </div>
+            <div class="mySlides">
+                <img src="{%static 'img/hos3.jpeg' %}" alt="Image 3" id="imgs">
+            </div>
+        </div>
+     <div class="sec2">
+       <table class="opt">
+            <tr>
+                <td><button class="btn" id="btn1" onclick="location.href='{% url 'doctors' %}'">Find a Doctor</button></td>
+                <td><button class="btn" id="btn2" onclick="location.href='{% url 'speciality' %}'">Specialities</button></td>
+                <td><button class="btn" id="btn3" onclick="location.href='{% url 'pharmacy' %}'">Pharmacy</button></td>
+                <td><button class="btn" id="btn4" onclick="location.href='{% url 'contact' %}'">Contact</button></td>
+            </tr>
+     </div>
+     <div class="searchBox">
+        
+        <form method="POST" action="{% url 'search' %}">
+            {%csrf_token%}
+          <table>
+            <tr>
+              <td><input type="text" class="searchbox" name="search" placeholder="Search Medicines" required></td>
+              <td><button class="mag" type="submit">Search</button></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <!-- <img class="mg" src="{% static 'img/mag.png' %}"> -->
+<div class="main">
+     <div class="about">
+        <h1 class="h">About Central Hospital</h1>
+        <p>CENTRAL HOSPITAL is a quaternary care hospital network offering end-to-end healthcare services, right from primary to quaternary care in India and Middle-east. CENTRAL HOSPITAL Hospital is owned and managed by M/s KIMS Health Care Management Limited, a public limited company incorporated under the Companies Act, 1956 with an objective to provide world-class affordable healthcare services the Company commenced its operations in …</p>
+        <button class="readmore" type="submit" onclick="window.location.href='#'">Read More</button>
+        <h1 class="h">Our Specialities</h1>
+        <p>At CENTRAL HOSPITAL Trivandrum, our aim is to deliver state-of-the-art medical care.<br> We are committed to providing the best patient care and welcome the opportunity to <br>serve you and your family</p>
+        <button id="rm2" class="readmore" type="submit" onclick="window.location.href='specialities.html'">View All</button>
+    </div>
+    <div class="spcl">
+        <img class="sp" src="{%static 'img/sp.jpeg' %}">
+        <a href="{% url 'cancer' %}" ><img class="cancerimg" src="{%static 'img/cancer.png' %}" id="imgs1"></a>
+        <a href="{% url 'cardio' %}" ><img class="cardioimg" src="{%static 'img/cardio.png' %}" id="imgs2"></a>
+        <a href="{% url 'gastro' %}" ><img class="gastroimg" src="{%static 'img/gastro.png' %}" id="imgs3"></a>
+        <a href="{% url 'gyno' %}" ><img class="gynoimg" src="{%static 'img/gyno.png' %}"id="imgs4"></a>
+        <a href="{% url 'neuro' %}" ><img class="neuroimg" src="{%static 'img/neuro.png' %}" id="imgs5"></a>
+    </div>
+    <div class="footer">
+        <img class="logf" src="{%static 'img/logo.png' %}"> 
+        <h1 class="hf"><span id="cnf">CENTRAL</span> <span id="hsf">HOSPITAL</span></h1>
+        <h3 class="tm">Thiruvananthapuram</h3>
+        <h3 class="c">Central Hospital,Vattiyoorkaavu P.O</h3>
+         <h3 class="c1">Tvm 695576,Kerala,India</h3>
+        <h2 class="c2">Follow Us On</h2>
+        <div class="social">
+        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><img class="twitter" src="{%static 'img/twitter.png' %}" id="s1"></a>
+        <a href="https://www.facebook.com/"><img class="facebook" src="{%static 'img/facebook.png' %}" id="s2"></a>
+        <a href="https://www.instagram.com/"><img class="instagram" src="{%static 'img/instagram.png' %}" id="s3"></a>
+        <a href="https://www.youtube.com/"><img class="youtube" src="{%static 'img/youtube.png' %}"" id="s4"></a>
+        <!-- <button class="insta" type="submit" onclick="instagram.png"></button> -->
+        </div>
+        <div class="home">
+            <p class="hom">HOME</p>
+        <ul class="foot">
+            <li ><a id="co" href="aboutus.html">About us</a></li>
+           <li ><a id="co" href="contact.html">contact us</a></li>
+            <li ><a id="co" href="specialities.html">Specialities</a></li>
+            <li id="ap"><a id="co"  href="doctors.html">Find a doctor</a></li>
+           <li id="ap"><a id="co" href="pharmacy.html">Pharmacy</a></li>
+        </ul>
+        </div>
+        <div class="contact">
+            <p>CONTACT US</p>
+            <p>Phone:8078114##5</p>
+            <p>Email:centralhospital@gmail.com</p>
+        </div>
+        <div class="choose">
+            <h1>Why Choose Us</h1>
+            <p>We make world class healthcare accessible to the people.<br> A team of expert doctors, experienced support staff and <br> most modern equipment ensure the patients get the best <br>care possible, all round the clock.</p>
+        </div>
+        <hr class="hrl">
+        <div class="tail">
+            <p>Copyright © CentralHEALTH Trivandrum - All Rights Reserved</p>
+            <a id="prv" href="privacy.html">privacy policy</a>
+            <a id="prv" href="terms.html">Terms of use</a>
+        </div>
+    </div> 
+</div> 
+</body>
+</html>

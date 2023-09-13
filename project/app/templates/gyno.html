@@ -1,0 +1,55 @@
+{%load static%}
+html>
+<head>
+  <title>Gynecology Department | Hospital Name</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'speciality' %}">Services</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+    </ul>
+    </nav>
+    <h1>Gynecology Department</h1>
+  </header>
+  <main>
+    <section>
+      <h2>About the Gynecology Department</h2>
+      <p>Our hospital's gynecology department is dedicated to providing comprehensive care to women throughout all stages of their lives. Our team of highly skilled and experienced gynecologists and women's health specialists are committed to improving the health and well-being of our patients.</p>
+      <p>Our gynecology services include:</p>
+      <ul>
+        <li>Annual well-woman exams</li>
+        <li>Birth control and family planning</li>
+        <li>Prenatal care and delivery</li>
+        <li>Menopause management</li>
+        <li>Minimally invasive surgery</li>
+        <li>And more</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Our Gynecology Team</h2>
+      <p>Our team of gynecologists and women's health specialists are dedicated to providing compassionate care to our patients. Meet our team:</p>
+      <ul>
+        <li>Dr. Sarah Johnson, MD, OB-GYN</li>
+        <li>Jessica Lee, NP, Women's Health Nurse Practitioner</li>
+        <li>Maria Rodriguez, RN, Women's Health Nurse</li>
+        <li>And more</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Make an Appointment</h2>
+      <p>To make an appointment with one of our gynecologists or to learn more about our gynecology services, please call us at <a href="tel:123-456-7890">123-456-7890</a> or fill out our online contact form.</p>
+    </section>
+    <section>
+        <button type="button" onclick="window.location.href='application.html'">Apply Now</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 CENTRAL HOSPITAL. All rights reserved.</p>
+  </footer>
+</body>
+</html>

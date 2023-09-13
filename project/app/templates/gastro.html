@@ -1,0 +1,54 @@
+{%load static%}
+<html>
+<head>
+  <title>Gastroenterology Department | Hospital Name</title>
+  <link rel="stylesheet" href="{%static 'css/specialities.css'%}">
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'speciality' %}">Services</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+    </ul>
+    </nav>
+    <h1>Gastroenterology Department</h1>
+  </header>
+  <main>
+    <section>
+      <h2>About the Gastroenterology Department</h2>
+      <p>Our hospital's gastroenterology department is dedicated to diagnosing and treating diseases and disorders of the digestive system, including the esophagus, stomach, small intestine, colon, rectum, pancreas, liver, and gallbladder.</p>
+      <p>Our gastroenterology services include:</p>
+      <ul>
+        <li>Endoscopy</li>
+        <li>Colonoscopy</li>
+        <li>Flexible Sigmoidoscopy</li>
+        <li>Liver Biopsy</li>
+        <li>Upper Gastrointestinal (GI) Series</li>
+        <li>And more</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Our Gastroenterology Team</h2>
+      <p>Our team of gastroenterologists, nurses, and technicians are dedicated to providing the highest quality care to our patients. Meet our team:</p>
+      <ul>
+        <li>Dr. John Smith, MD, Gastroenterologist</li>
+        <li>Jane Doe, RN, BSN, Gastroenterology Nurse</li>
+        <li>Mark Johnson, RVT, Registered Vascular Technologist</li>
+        <li>And more</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Make an Appointment</h2>
+      <p>To make an appointment with one of our gastroenterologists or to learn more about our gastroenterology services, please call us at <a href="tel:123-456-7890">123-456-7890</a> or fill out our online contact form.</p>
+    </section>
+    <section>
+        <button type="button" onclick="window.location.href='application.html'">Apply Now</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 CENTRAL HOSPITAL. All rights reserved.</p>
+  </footer>
+</body>
+</html>

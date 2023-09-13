@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      margin-top: 50px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    .message {
+      font-weight: bold;
+    }
+    
+    .thankyou {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    
+    .contact-details {
+      margin-top: 30px;
+    }
+    
+    .contact-details p {
+      margin-bottom: 5px;
+    }
+    
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .back-link a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .home-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .home-link a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-within,:active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Confirmation</h1>
+    <p class="message">Thank you for contacting us!</p>
+    <p class="thankyou">We appreciate your message and will get back to you soon.</p>
+    <div class="contact-details">
+      <p><strong>Name:</strong> {{ name }}</p>
+      <p><strong>Email:</strong> {{ email }}</p>
+      <p><strong>Message:</strong></p>
+      <p>{{ message }}</p>
+    </div>
+    <div class="back-link">
+      <a href="{% url 'contact' %}">Go back to Contact Form</a>
+    </div>
+    <div class="home-link">
+      <a href="{% url 'home' %}">Go back to Home</a>
+    </div>
+  </div>
+  <button onclick="location.href='{% url 'home' %}'" class="btn-donate">
+    Home
+</button>
+</body>
+</html>

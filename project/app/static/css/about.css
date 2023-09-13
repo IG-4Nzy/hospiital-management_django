@@ -1,0 +1,331 @@
+body{
+ overflow-x: hidden;
+
+
+}
+
+.logo{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        top: 30px;
+        left: 30px;
+    }
+    
+    #cn{
+        color: rgb(62, 63, 63);
+        font-weight: bold;
+        font-style: normal;
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        left: 130px;
+        bottom: 70px;
+    }
+    #hs{
+        font-weight: lighter;
+        font-size: larger ;
+        font-family:Arial, Helvetica, sans-serif;
+        position: relative;
+        left: 130px;
+        bottom: 70px;
+    }
+    .tvm{
+        position: relative;
+        left: 130px;
+        bottom: 90px; 
+    }
+    .image{
+        position: relative;
+        width: 1610px;
+        height: 500px;
+        right: 10px;
+        top: 120px;
+    }
+    .top{
+        position: relative;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        width: 1600px;
+        height: 130px;
+        z-index: 2;
+        right: 0;
+    }
+    .lin{
+        left: 500px;
+        top: 0;
+        z-index: 1;
+        position: fixed; 
+    }
+    .lis{
+        list-style-type: none;
+        display: inline;
+        padding: 10px;
+        left: 15px; 
+        top: 50px;
+        position: relative;
+    }
+    .cls{
+        position: relative;
+        top: 100px;
+    }
+    
+    .hed{
+        font-size: 35px;
+        font-weight: bolder;
+        top: 15px;
+        position: relative;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .sa{
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: 'Times New Roman', Times, serif;
+        opacity: 80%;
+    }
+    #info{
+        position: relative;
+        top: -10px;
+    }
+    .vision{
+        background-color: rgb(243, 243, 243);
+        width: 100%;
+    }
+    .visimg{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        top: 100px;
+        left: 500px;
+        z-index: 1;
+    }
+    #hed{
+        position: relative;
+        top: -550px;
+        left: 530px;
+    }
+    .line1,.line2,.line3{
+        width: 300px;
+        border-top: 3px solid rgb(255, 0, 0);
+    }
+    .line1{
+        position: relative;
+        right: 300px;
+        bottom: 250px;
+        width: 100px;
+    }
+    .line2{
+        position: relative;
+        right: -240px;
+        bottom: 250px;
+        width:100px;
+    }
+    .line3{
+            border: none;
+            border-left: 3px solid rgb(255, 0, 0);
+            height: 100px; 
+            left: 750px;  
+            position:absolute;
+
+    }
+.v1,.m1,.val1{
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+}
+.v1{
+    position: relative;
+    bottom: 440px;
+    left: 200px;
+}
+.m1{
+    position: relative;
+    bottom: 530px;
+    left: 1075px;
+}
+.val1{
+    position: relative;
+    bottom: 220px;
+    left: 625px;
+}
+.def1{
+    position: relative;
+    left: 70px;
+    top: -50px;
+}
+#ac{
+    border-radius:15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    width:300px;
+    height: 80px;
+}
+.cup1{
+    top: 15px;
+    left: 5px;
+    position: relative;
+}
+.ac2{
+    position: relative;
+    left: 350px;
+    top: -80px;
+}
+.ac3{
+    position: relative;
+    left: 700px;
+    top: -160px;
+}
+.ac4{
+    position: relative;
+    left: 5px;
+    top: -150px;
+}
+.ac5{
+    position: relative;
+    left: 350px;
+    top: -230px;
+}
+.ac6{
+    position: relative;
+    left: 700px;
+    top: -300px;
+}
+.def2{
+    position: relative;
+    left: 60px;
+    bottom: 30px;
+}
+.cup2{
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+.def3{
+    position: relative;
+    left: 60px;
+    bottom: 30px;
+}
+.cup3{
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+.def4{
+    position: relative;
+    left: 60px;
+    top: -30px;
+}
+.def5{
+    position: relative;
+    left: 60px;
+    top: -50px;
+}
+.def6{
+    position: relative;
+    left: 60px;
+    top: -40px;
+}
+.cup4,.cup5,.cup6{
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+
+
+
+.lastline{
+    width: 2000px;
+    left: -700px;
+    position: relative;
+
+}
+
+.logf{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -150px;
+}
+.hf{
+    position: relative;
+    left: 100px;
+    bottom: 215px;
+    font-size: 20px;
+}
+.tog{
+    position: relative;
+    bottom: 230px;
+    left: 100px;
+}
+.social{
+    position: relative;
+    bottom: 200px;
+}
+#s1,#s2,#s3,#s4{
+    position:relative;
+    width:80px;
+    height:80px;
+    }
+    #s3{
+    width:60px;
+    height:60px;
+    top:-10px;
+    left:10px;
+    }
+    #s4{
+    width:150px;
+    height:150px;
+    left:-15px;
+    top:35px;
+    }
+    .insta,.youtub{
+    width:50px;
+    height:50px;
+    position:relative;
+    right:200px;
+    top:20px;
+    opacity:0%;
+    }
+    .youtub{
+    left:50px;
+    }
+    .res{
+        position: relative;
+        top: -60px;
+    }
+    .contact{
+        position: relative;
+        top: -300px;
+        left: 30px;
+    }
+    .choose{
+        position: relative;
+        left: 700px;
+        top: -770px;
+    }
+    .home{
+        position: relative;
+        bottom: 700px;
+        left: 700px;
+    }
+    .foot{
+        list-style-type: none;
+    }
+    .pad{
+        padding: 10px;
+        right: 50px;
+        position: relative;
+    }
+    .hrline{
+        position: relative;
+        bottom: 600px;
+    }
+    .tail{
+        position: relative;
+        bottom: 600px;
+        height: 80px;
+    }

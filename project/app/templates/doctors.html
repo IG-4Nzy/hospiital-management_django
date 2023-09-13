@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    
+    .card {
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      background-color: #fff;
+      display: inline-block;
+    }
+    
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .card-text {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+    
+    .no-doctors {
+      text-align: center;
+      color: #555;
+      margin-top: 20px;
+    }
+    .btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-within,:active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <h1>Doctor List</h1>
+  
+  {% if doctors %}
+    {% for doctor in doctors %}
+      <div class="card">
+        <img src="{{ doctor.image.url }}" alt="Doctor Image" height="150">
+        <div class="card-body">
+          <h5 class="card-title">{{ doctor.name }}</h5>
+          <p class="card-text">Speciality: {{ doctor.speciality }}</p>
+          <p class="card-text">Fees: {{ doctor.fees }}</p>
+          <p class="card-text">Consulting Time: {{ doctor.time }}</p>
+          <p class="card-text">Room Number: {{ doctor.room }}</p>
+          <a href="{% url 'book_appointment' doctor.id %}" style="display: inline-block; padding: 12px 24px; font-size: 16px; text-decoration: none; background-color: #007bff; color: #fff; border: none; border-radius: 4px; transition: background-color 0.3s ease-in-out;">
+            Book Appointment
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p class="no-doctors">No doctors found.</p>
+  {% endif %}
+  <button onclick="location.href='{% url 'home' %}'" class="btn-donate">
+    Home
+</button>
+</body>
+</html>

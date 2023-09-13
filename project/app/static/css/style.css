@@ -1,0 +1,378 @@
+body{
+  overflow-x: hidden;
+  
+}
+
+
+.fl{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(255, 255, 255);
+
+}
+.lis{
+    font-size: larger;
+}
+
+.lis{
+display:inline;
+}
+
+.lis{
+float: right;
+}
+  
+.lis a{
+display: block;
+color: rgb(68, 68, 68);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+img{
+width: 100px;
+height: 100px;
+display: inline;
+float: left;
+}
+
+.lis:hover{
+    background-color: rgb(77, 77, 77);
+    }
+#lis:hover{
+  color: #fff;
+}
+    
+.logo{
+position: relative;
+width: 150px;  
+height: 150px;   
+bottom: 100px;
+left: 150px;
+object-fit:cover;
+object-position:left;
+}
+
+#cn{
+    color: rgb(62, 63, 63);
+    font-weight: bold;
+    font-style: normal;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#hs{
+    font-weight: lighter;
+    font-size: larger ;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    bottom: 70px;
+    right: 430px;
+  }
+  
+
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 400px;
+  }
+  #imgs{
+    width: 1900px;
+    height: 350px;
+  }
+  .heading{
+    position: relative;
+    bottom: 45px;
+    left: 150px;
+    color: rgb(28, 28, 85);
+  }
+ .tvm{
+    position: relative;
+    bottom: 70px;
+    left: 150px;
+    color: rgb(28, 28, 85);
+ }
+ .btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#333;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #525252;
+  }
+  
+  .btn:active {
+    box-shadow: none;
+    transform: translateY(2px);
+  }
+  .opt{
+    position: relative;
+    left: 400px;
+    bottom: 100px;
+  }
+.mag{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  left: 600px;
+}
+.searchBox{
+  position: relative;
+  left: 600px;
+  width: 300px;
+  height: 30px;
+}
+.sub{
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+/* .sub2{ */
+  /* width: 30px; */
+  /* height: 30px; */
+/* } */
+.readmore{
+  position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease-in-out;
+}
+.readmore:hover {
+  background-color: #4c504d;
+}
+#rm2{
+  position: relative;
+}
+
+.sp{
+  position: relative;
+  left: 800px;
+  width: 500px;
+  height: 250px;
+  bottom: 120px;
+  opacity: 50%;
+}
+ #imgs1,#imgs2,#imgs3,#imgs4,#imgs5{ 
+  position: relative; 
+   width: 70px;
+   height: 70px; 
+ } 
+.cancerimg{
+  position: relative;
+  left: 410px;
+  bottom: 100px;
+}
+.cardioimg{
+  position: relative;
+  left: 480px;
+  bottom: 100px;
+}
+.gastroimg{
+  position: relative; 
+  left: 550px;
+  bottom: 100px;
+}
+.gynoimg{
+  position: relative;
+  left: 200px;
+  top: 30px;
+}
+.neuroimg{
+  position: relative;
+  left: 250px;
+  top: 30px;
+}
+.h{
+  font-size:medium;
+  font-weight: bold;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+  font-size: large;
+  font-weight:lighter;
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.footer{
+  background-color: #333;
+}
+.footer{
+  position: relative;
+  top: 130px;
+  color: #ffffff;
+  
+}
+.logf{
+  position: relative;
+  right: 850px;
+  bottom: 10px;
+  width:200px;
+  height:200px;
+  
+}
+.hf{
+  position: relative;
+  right: 850px;
+  color: #ffffff;
+  top:50px
+}
+#cnf{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#hsf{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+.c{
+  position: relative;
+  right: 850px;
+  top:20px;
+  color: #ffffff;
+}
+.tm{
+  position: relative;
+  right: 850px;
+  top:30px;
+  color: #ffffff;
+}
+.c1{
+  position: relative;
+  right: 850px;
+  top:10px;
+  color: #ffffff;
+}
+.c2{
+  position: relative;
+  right: 1000px;
+  top:20px;
+  color: #ffffff;
+}
+.foot{
+  list-style: none;
+}
+.footer{
+position:relative;
+width:200%;
+right:10px;
+}
+.home{
+  position: relative;
+  left: 210px;
+  bottom: 250px;
+}
+
+.spcl{
+position:relative;
+bottom:50px;
+}
+.social{
+position:relative;
+left:25px;
+}
+#ap{
+position:relative;
+left:330px;
+}
+.contact{
+position:relative;
+left:30px;
+bottom: 100px;
+color: #ffffff;
+}
+.tail{
+position:relative;
+left:20px;
+bottom: 50px;
+}
+#prv{
+position:relative;
+bottom:10px;
+}
+#s1,#s2,#s3,#s4{
+position:relative;
+width:80px;
+height:80px;
+}
+#s3{
+width:60px;
+height:60px;
+top:10px;
+left:10px;
+}
+#s4{
+width:150px;
+height:150px;
+left:-15px;
+top:-35px;
+}
+.insta,.youtub{
+width:50px;
+height:50px;
+position:relative;
+right:200px;
+top:20px;
+opacity:0%;
+}
+.youtub{
+left:50px;
+}
+.choose{
+  position: relative;
+  left: 900px;
+  bottom: 550px;
+}
+.hrl{
+  position: relative;
+  bottom: 200px;
+}
+.tail{
+  position: relative;
+  bottom: 200px;
+}
+.main{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#co,#prv{
+  color: #ffffff;
+}
+.hom{
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+#co:hover{
+  color: blue;
+}

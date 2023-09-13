@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appointment Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .confirmation-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .confirmation-title {
+      margin-bottom: 20px;
+    }
+
+    .confirmation-message {
+      margin-bottom: 20px;
+    }
+
+    .token-number {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="confirmation-container">
+    <h2 class="confirmation-title">Appointment Confirmed</h2>
+    <p class="confirmation-message">Thank you for booking your appointment. We have sent a confirmation email to your registered email address.</p>
+    <p class="confirmation-message">Your token number is: <span class="token-number">{{ token_number }}</span></p>
+    <p class="confirmation-message">For further information or any changes, please refer to the confirmation email.</p>
+  </div>
+</body>
+</html>
